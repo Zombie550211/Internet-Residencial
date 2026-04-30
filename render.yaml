@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: internet-residencial
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
