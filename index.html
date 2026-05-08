@@ -30,34 +30,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&font-display=swap"
       rel="stylesheet"
     />
 
+    <meta property="og:image" content="./images/familia_conectada.webp" />
+    <meta name="twitter:image" content="./images/familia_conectada.webp" />
+
     <link rel="stylesheet" href="./styles.css" />
-
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <script defer>
-      window.tailwind = window.tailwind || {};
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Arial", "sans-serif"],
-            },
-            colors: {
-              night: {
-                950: "#050712",
-                900: "#070a18",
-                800: "#0b1220",
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js" defer></script>
 
 
     <script type="application/ld+json">
@@ -85,35 +65,35 @@
 
     <header class="site-header-dark">
       <div class="container px-4">
-        <div class="flex items-center justify-between gap-4 py-4">
-          <a href="#contenido" class="flex items-center gap-3 min-w-[180px]">
-            <div class="h-10 w-10 rounded-2xl overflow-hidden shadow-[0_18px_40px_rgba(0,0,0,.35)]">
-              <img src="./images/Connecting (2).png" alt="Connecting logo" class="h-full w-full object-contain">
+        <div class="header-row">
+          <a href="#contenido" class="brand" aria-label="Connecting — inicio">
+            <div class="header-logo">
+              <img src="./images/Connecting (2).png" alt="Connecting" width="40" height="40">
             </div>
-            <div class="leading-tight">
-              <div class="text-slate-900 font-extrabold tracking-tight">Connecting</div>
-              <div class="text-[12px] text-slate-600">Internet residencial en USA · Atención en español</div>
+            <div>
+              <div class="brand-name">Connecting</div>
+              <div class="brand-tagline">Internet residencial en USA · Atención en español</div>
             </div>
           </a>
 
-          <nav class="hidden md:flex items-center gap-3 text-sm text-slate-600" aria-label="Navegación principal">
-            <a class="px-3 py-2 rounded-xl hover:bg-black/5 hover:text-slate-900 transition" href="#planes">Planes</a>
-            <a class="px-3 py-2 rounded-xl hover:bg-black/5 hover:text-slate-900 transition" href="#beneficios">Cobertura</a>
-            <a class="px-3 py-2 rounded-xl hover:bg-black/5 hover:text-slate-900 transition" href="#preguntas">Soporte</a>
+          <nav class="nav" aria-label="Navegación principal">
+            <a href="#planes">Planes</a>
+            <a href="#beneficios">Cobertura</a>
+            <a href="#preguntas">Soporte</a>
           </nav>
 
-          <div class="flex items-center gap-2">
+          <div class="header-cta">
             <button class="btn btn-primary" data-action="call" type="button">(214) 220-4594</button>
           </div>
         </div>
       </div>
 
-      <div class="border-t border-white/5">
+      <div class="notice">
         <div class="container px-4">
-          <div class="py-2 text-[13px] text-slate-700" role="note">
-            <strong class="text-slate-900">Importante:</strong>
+          <p class="notice-inner" role="note">
+            <strong>Importante:</strong>
             No somos dealers autorizados. Ofrecemos asistencia y opciones de servicio residencial; la disponibilidad y términos varían por zona.
-          </div>
+          </p>
         </div>
       </div>
     </header>
@@ -141,52 +121,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Barra de recomendación horizontal -->
-      <div class="container px-4 pb-6">
-        <div class="mt-6 glass-card p-4" data-reco>
-          <input type="range" data-slider="streaming" class="hidden" min="0" max="10" value="5" aria-hidden="true">
-          <input type="range" data-slider="work" class="hidden" min="0" max="10" value="1" aria-hidden="true">
-          <input type="range" data-slider="devices" class="hidden" min="0" max="10" value="2" aria-hidden="true">
-          <span data-streaming-val class="hidden">5</span>
-          <span data-work-val class="hidden">1</span>
-          <span data-devices-val class="hidden">4</span>
-
-          <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-4">
-            <div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-3 lg:shrink-0">
-              <span class="text-sm font-medium text-slate-600">Describe tu uso:</span>
-              <div class="flex gap-1">
-                <button data-uso="streaming" class="uso-tab flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-blue-600 text-white transition">
-                  <i data-lucide="tv" class="h-3.5 w-3.5"></i> Streaming
-                </button>
-                <button data-uso="trabajo" class="uso-tab flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-slate-600 hover:bg-black/5 transition">
-                  <i data-lucide="briefcase" class="h-3.5 w-3.5"></i> Trabajo
-                </button>
-                <button data-uso="gaming" class="uso-tab flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-slate-600 hover:bg-black/5 transition">
-                  <i data-lucide="gamepad-2" class="h-3.5 w-3.5"></i> Gaming
-                </button>
-              </div>
-            </div>
-            <div class="h-px bg-black/10 lg:h-6 lg:w-px"></div>
-            <div class="flex items-center gap-2">
-              <span class="text-sm text-slate-600">Telecopativos</span>
-              <button id="tele-toggle" class="relative inline-flex h-6 w-11 rounded-full bg-blue-500 transition-colors" role="switch" aria-checked="true">
-                <span class="translate-x-5 inline-block h-5 w-5 rounded-full bg-white shadow mt-0.5 ml-0.5 transition-transform"></span>
-              </button>
-              <span class="text-sm font-bold text-blue-600">+100%</span>
-            </div>
-            <div class="h-px bg-black/10 lg:h-6 lg:w-px"></div>
-            <div class="flex-1">
-              <div class="text-xs text-slate-500" data-reco-people>Para 3+ personas:</div>
-              <div class="text-sm font-bold text-slate-900" data-reco-text>Fibra 300Mbps</div>
-              <div class="text-xs text-slate-500 mt-0.5" data-reco-sub>Recomendado según tu uso.</div>
-            </div>
-            <div class="lg:shrink-0">
-              <button class="btn btn-primary btn-full" data-action="call" type="button">(214) 220-4594</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <section id="planes" class="planes-section">
         <div class="planes-bg" aria-hidden="true"></div>
@@ -477,8 +411,8 @@
         <div class="faq-footer-inner">
           <div class="faq-footer-copy">
             &copy; <span data-year></span> Connecting &nbsp;&middot;&nbsp;
-            <a href="#">Aviso Legal</a> &nbsp;&middot;&nbsp;
-            <a href="#">Pol&iacute;tica de Privacidad</a> &nbsp;&middot;&nbsp;
+            <a href="./legal.html">Aviso Legal</a> &nbsp;&middot;&nbsp;
+            <a href="./privacy.html">Pol&iacute;tica de Privacidad</a> &nbsp;&middot;&nbsp;
             <a href="#preguntas">Soporte T&eacute;cnico</a>
           </div>
         </div>
@@ -490,13 +424,5 @@
     </div>
 
     <script src="./app.js" defer></script>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        if (window.lucide && typeof window.lucide.createIcons === "function") {
-          window.lucide.createIcons();
-        }
-      });
-    </script>
   </body>
 </html>
