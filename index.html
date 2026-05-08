@@ -42,7 +42,6 @@
 
     <link rel="stylesheet" href="./styles.css" />
 
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -59,7 +58,7 @@
           "TV + Internet",
           "Líneas móviles familiares"
         ]
-      }   
+      }
     </script>
   </head>
 
@@ -81,7 +80,7 @@
 
           <nav class="nav" aria-label="Navegación principal">
             <a href="#planes">Planes</a>
-            <a href="#beneficios">Cobertura</a>
+            <a href="#beneficios">Servicios</a>
             <a href="#preguntas">Soporte</a>
           </nav>
 
@@ -90,11 +89,11 @@
           </div>
         </div>
       </div>
-
     </header>
 
     <main id="contenido">
-      <!-- Hero full-width con imagen de fondo -->
+
+      <!-- ── Hero ──────────────────────────────────── -->
       <section class="hero-fullwidth" aria-label="Sección principal">
         <div class="hero-wm-cover" aria-hidden="true"></div>
         <div class="container px-4 relative z-10">
@@ -117,189 +116,163 @@
         </div>
       </section>
 
-      <section id="planes" class="planes-section">
-        <div class="planes-bg" aria-hidden="true"></div>
-        <div class="container px-4 relative z-10">
+      <!-- ── Planes ─────────────────────────────────── -->
+      <section id="planes" class="planes-section-v2">
+        <div class="container px-4">
 
-          <div class="planes-head">
+          <div class="planes-head-v2">
             <h2>Nuestros <span>Planes</span></h2>
             <p>Elige el plan perfecto para tu hogar · Precios de referencia sujetos a disponibilidad por zona</p>
           </div>
 
-          <div class="planes-grid">
+          <div class="planes-grid-v2">
 
             <!-- Plan 1 -->
-            <article class="plan-card">
-              <div class="plan-card-header">
-                <h3 class="plan-name">Fibra<span>300</span></h3>
-              </div>
-              <div class="plan-card-body">
-                <div class="plan-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <!-- WiFi arcs -->
-                    <path d="M13 19 C16 13 32 13 35 19" stroke="#06b6d4" stroke-width="1.8"/>
-                    <path d="M17 23 C19 19.5 29 19.5 31 23" stroke="#22d3ee" stroke-width="1.8"/>
-                    <circle cx="24" cy="27" r="2" fill="#22d3ee" stroke="none"/>
-                    <!-- House -->
-                    <path d="M9 32 L24 22 L39 32" stroke="#06b6d4" stroke-width="1.8"/>
-                    <path d="M13 30 L13 43 L35 43 L35 30" fill="rgba(6,182,212,0.10)" stroke="#06b6d4" stroke-width="1.8"/>
-                    <!-- Door -->
-                    <rect x="20" y="35" width="8" height="8" rx="1" fill="rgba(6,182,212,0.20)" stroke="#06b6d4" stroke-width="1.5"/>
-                  </svg>
-                </div>
-                <div class="plan-badge">IDEAL FAMILIAS</div>
-                <ul class="plan-features">
-                  <li>300 Mbps simétrico</li>
-                  <li>Streaming Full HD</li>
-                  <li>Múltiples dispositivos</li>
-                  <li>Sin contrato forzoso</li>
+            <article class="plan-card-v2">
+              <div class="plan-card-v2-header plan-v2-cyan">Fibra 300</div>
+              <div class="plan-card-v2-body">
+                <p class="plan-v2-type">INTERNET</p>
+                <h3 class="plan-v2-name">Internet 300</h3>
+                <ul class="plan-v2-features">
+                  <li>Hasta 300 Mbps de descarga</li>
+                  <li>Datos ilimitados</li>
+                  <li>Instalación rápida</li>
+                  <li>Sin contratos obligatorios</li>
+                  <li>Streaming en 5–8 dispositivos</li>
+                  <li>Precio fijo por 12 meses</li>
                 </ul>
-                <button class="plan-btn" data-action="call" type="button">CONTRATAR AHORA</button>
+                <div class="plan-v2-price-row">
+                  <span class="plan-v2-price">$55.00</span>
+                  <span class="plan-v2-freq">/mes</span>
+                </div>
+                <p class="plan-v2-note">Impuestos y cargos no incluidos</p>
+                <button class="plan-v2-btn plan-v2-btn-cyan" data-action="call" type="button">Adquirir Oferta</button>
               </div>
             </article>
 
-            <!-- Plan 2 - Destacado -->
-            <article class="plan-card plan-featured">
-              <div class="plan-card-header plan-card-header-featured">
-                <h3 class="plan-name">Fibra<span>500</span></h3>
-              </div>
-              <div class="plan-card-body">
-                <div class="plan-icon plan-icon-featured" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Monitor -->
-                    <rect x="5" y="9" width="38" height="26" rx="3" fill="rgba(34,211,238,0.08)" stroke="#22d3ee" stroke-width="1.8"/>
-                    <!-- Play button -->
-                    <path d="M19 16 L32 22 L19 28 Z" fill="rgba(34,211,238,0.25)" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
-                    <!-- Stand -->
-                    <line x1="24" y1="35" x2="24" y2="41"/>
-                    <line x1="16" y1="41" x2="32" y2="41"/>
-                    <!-- Signal dots -->
-                    <circle cx="9" cy="17" r="1.5" fill="#22d3ee" stroke="none" opacity="0.7"/>
-                    <circle cx="9" cy="23" r="1.5" fill="#22d3ee" stroke="none" opacity="0.7"/>
-                    <circle cx="9" cy="29" r="1.5" fill="#22d3ee" stroke="none" opacity="0.7"/>
-                  </svg>
-                </div>
-                <div class="plan-badge plan-badge-featured">MÁS POPULAR</div>
-                <ul class="plan-features">
-                  <li>500 Mbps simétrico</li>
-                  <li>Streaming 4K</li>
+            <!-- Plan 2 -->
+            <article class="plan-card-v2">
+              <div class="plan-card-v2-header plan-v2-purple">Fibra 500</div>
+              <div class="plan-card-v2-body">
+                <p class="plan-v2-type">INTERNET</p>
+                <h3 class="plan-v2-name">Internet 500</h3>
+                <ul class="plan-v2-features">
+                  <li>Datos ilimitados</li>
+                  <li>500 Mbps simétrico (subida y bajada)</li>
+                  <li>Ideal para videollamadas sin lag</li>
                   <li>Gaming Pro</li>
-                  <li>Videollamadas HD</li>
-                  <li>Múltiples dispositivos</li>
+                  <li>Conecta +10 dispositivos a la vez</li>
                 </ul>
-                <button class="plan-btn plan-btn-featured" data-action="call" type="button">CONTRATAR AHORA</button>
+                <div class="plan-v2-price-row">
+                  <span class="plan-v2-price">$75.00</span>
+                  <span class="plan-v2-freq">/mes</span>
+                </div>
+                <p class="plan-v2-note">Impuestos y cargos no incluidos</p>
+                <button class="plan-v2-btn plan-v2-btn-purple" data-action="call" type="button">Adquirir Oferta</button>
               </div>
             </article>
 
             <!-- Plan 3 -->
-            <article class="plan-card">
-              <div class="plan-card-header">
-                <h3 class="plan-name">Fibra<span>1 Giga</span></h3>
-              </div>
-              <div class="plan-card-body">
-                <div class="plan-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Rocket body -->
-                    <path d="M24 5 C29 5 35 11 35 22 L35 31 L13 31 L13 22 C13 11 19 5 24 5Z" fill="rgba(6,182,212,0.10)" stroke="#06b6d4" stroke-width="1.8"/>
-                    <!-- Porthole -->
-                    <circle cx="24" cy="18" r="4" fill="rgba(6,182,212,0.20)" stroke="#22d3ee" stroke-width="1.5"/>
-                    <!-- Fins -->
-                    <path d="M13 27 L7 35 L13 31" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5"/>
-                    <path d="M35 27 L41 35 L35 31" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5"/>
-                    <!-- Flame -->
-                    <path d="M18 31 C18 37 21 42 24 44 C27 42 30 37 30 31" fill="rgba(251,146,60,0.22)" stroke="#f97316" stroke-width="1.5"/>
-                    <path d="M21 31 C21 35 22.5 38 24 40 C25.5 38 27 35 27 31" fill="rgba(251,191,36,0.28)" stroke="#fbbf24" stroke-width="1.2"/>
-                  </svg>
-                </div>
-                <div class="plan-badge">MÁXIMO PODER</div>
-                <ul class="plan-features">
+            <article class="plan-card-v2">
+              <div class="plan-card-v2-header plan-v2-cyan">Fibra 1 Giga</div>
+              <div class="plan-card-v2-body">
+                <p class="plan-v2-type">INTERNET FIBRA</p>
+                <h3 class="plan-v2-name">Fiber 1 Giga</h3>
+                <ul class="plan-v2-features">
                   <li>1 Gbps simétrico</li>
+                  <li>Datos ilimitados sin contratos</li>
+                  <li>WiFi 6 de última generación</li>
                   <li>Gaming Pro + 4K</li>
-                  <li>Trabajo remoto</li>
                   <li>Casa inteligente</li>
                 </ul>
-                <button class="plan-btn" data-action="call" type="button">CONTRATAR AHORA</button>
+                <div class="plan-v2-price-row">
+                  <span class="plan-v2-price">$89.00</span>
+                  <span class="plan-v2-freq">/mes</span>
+                </div>
+                <p class="plan-v2-note">Impuestos y cargos no incluidos</p>
+                <button class="plan-v2-btn plan-v2-btn-cyan" data-action="call" type="button">Adquirir Oferta</button>
+              </div>
+            </article>
+
+            <!-- Plan 4 -->
+            <article class="plan-card-v2">
+              <div class="plan-card-v2-header plan-v2-blue">Línea Móvil</div>
+              <div class="plan-card-v2-body">
+                <p class="plan-v2-type">LÍNEA MÓVIL</p>
+                <h3 class="plan-v2-name">Plan Unlimited 5G</h3>
+                <ul class="plan-v2-features">
+                  <li>Datos ilimitados para uso diario</li>
+                  <li>Llamadas y SMS ilimitados en USA</li>
+                  <li>Cobertura nacional 5G / LTE</li>
+                  <li>Sin contrato anual obligatorio</li>
+                  <li>Atención en español</li>
+                  <li>Conserva tu número (portabilidad)</li>
+                </ul>
+                <div class="plan-v2-price-row">
+                  <span class="plan-v2-price">$32.00</span>
+                  <span class="plan-v2-freq">/línea</span>
+                </div>
+                <p class="plan-v2-note">Impuestos y cargos no incluidos</p>
+                <button class="plan-v2-btn plan-v2-btn-blue" data-action="call" type="button">Adquirir Oferta</button>
               </div>
             </article>
 
           </div>
 
-          <p class="planes-legal">
+          <p class="planes-legal-v2">
             Connecting no es dealer autorizado. Precios de referencia, la disponibilidad y términos varían por zona.
             Te ayudamos a comparar opciones de <strong>internet residencial</strong>, <strong>TV + internet</strong> y <strong>líneas móviles</strong>.
           </p>
         </div>
       </section>
 
-      <section id="beneficios" class="garantias-section">
-        <div class="garantias-bg" aria-hidden="true"></div>
-        <div class="container px-4 relative z-10">
+      <!-- ── Soluciones a tu medida ─────────────────── -->
+      <section id="beneficios" class="soluciones-section">
+        <div class="container px-4">
 
-          <div class="garantias-head">
-            <h2>EN QUÉ TE <span>PODEMOS AYUDAR</span></h2>
-            <p>Orientación completa para clientes hispanos en USA — desde contratar hasta optimizar tu servicio</p>
+          <div class="soluciones-head">
+            <h2>Soluciones a tu <span>medida</span></h2>
+            <p>Ayudamos a familias en Estados Unidos a resolver problemas reales con compañías de internet residencial: facturas que suben sin aviso, cortes frecuentes, velocidad menor a la contratada y cargos injustificados.</p>
           </div>
 
-          <div class="garantias-grid">
+          <div class="soluciones-grid">
 
-            <article class="gtcard">
-              <div class="gtcard-header"><span>CONTRATAR INTERNET</span></div>
-              <div class="gtcard-body">
-                <div class="gtcard-icon" aria-hidden="true">
-                  <svg viewBox="0 0 54 54" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="6" y="12" width="42" height="30" rx="4" fill="rgba(6,182,212,0.08)"/>
-                    <line x1="6" y1="20" x2="48" y2="20"/>
-                    <path d="M15 30 L22 37 L39 20" stroke="#22d3ee" stroke-width="2.5"/>
+            <article class="solucion-card">
+              <img src="./images/sol_facturas.webp" alt="Mujer revisando factura alta de internet" class="solucion-img-real">
+              <div class="solucion-body">
+                <div class="solucion-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
                   </svg>
                 </div>
-                <ul class="gtcard-list">
-                  <li>Revisamos cobertura en tu zona</li>
-                  <li>Comparamos velocidades y precios</li>
-                  <li>Te guiamos con la activación</li>
-                  <li>Atención completa en español</li>
-                </ul>
-                <button class="gtcard-btn" data-action="call" type="button">CONSULTAR PLANES</button>
+                <h3>Facturas Altas y Cargos Injustos</h3>
+                <p>Simplifica tu factura y mantén un costo estable cada mes. Con nuestras promociones, puedes tener mayor control sobre lo que pagas.</p>
               </div>
             </article>
 
-            <article class="gtcard">
-              <div class="gtcard-header"><span>SOPORTE Y PAGOS</span></div>
-              <div class="gtcard-body">
-                <div class="gtcard-icon" aria-hidden="true">
-                  <svg viewBox="0 0 54 54" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="27" cy="27" r="19" fill="rgba(6,182,212,0.08)"/>
-                    <path d="M20 24 C20 19 34 19 34 24 C34 29 27 30 27 34" stroke="#22d3ee" stroke-width="2"/>
-                    <circle cx="27" cy="40" r="2" fill="#22d3ee" stroke="none"/>
+            <article class="solucion-card">
+              <img src="./images/sol_internet.webp" alt="Familia con problemas de internet en casa" class="solucion-img-real">
+              <div class="solucion-body">
+                <div class="solucion-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                    <path d="M1.42 9a16 16 0 0121.16 0"/><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M10.71 17.4a4 4 0 012.62-.01"/><circle cx="12" cy="21" r="1" fill="#0ea5e9" stroke="none"/>
                   </svg>
                 </div>
-                <ul class="gtcard-list">
-                  <li>Entiende tu factura mensual</li>
-                  <li>Resolvemos cortes y fallas</li>
-                  <li>Diagnóstico de velocidad</li>
-                  <li>Opciones de pago flexibles</li>
-                </ul>
-                <button class="gtcard-btn" data-action="call" type="button">OBTENER SOPORTE</button>
+                <h3>Internet Lento, Cortes y Mala Señal</h3>
+                <p>Te ayudamos a mejorar tu conexión incluso en horas de mayor uso, para que disfrutes internet sin interrupciones en toda tu casa.</p>
               </div>
             </article>
 
-            <article class="gtcard gtcard-green">
-              <div class="gtcard-header gtcard-header-green"><span>OPTIMIZAR TU RED</span></div>
-              <div class="gtcard-body">
-                <div class="gtcard-icon gtcard-icon-green" aria-hidden="true">
-                  <svg viewBox="0 0 54 54" fill="none" stroke="#22c55e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 22 C13 14 20 10 27 10 C34 10 41 14 47 22"/>
-                    <path d="M12 28 C16 23 21 20 27 20 C33 20 38 23 42 28"/>
-                    <path d="M17 34 C20 31 23 29 27 29 C31 29 34 31 37 34"/>
-                    <circle cx="27" cy="41" r="3.5" fill="#22c55e" stroke="none"/>
+            <article class="solucion-card">
+              <img src="./images/sol_mudanza.webp" alt="Mudanza y cambio de proveedor de internet" class="solucion-img-real">
+              <div class="solucion-body">
+                <div class="solucion-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                    <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a1 1 0 011 1v5a1 1 0 01-1 1h-4"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
                   </svg>
                 </div>
-                <ul class="gtcard-list">
-                  <li>Mejora la cobertura WiFi</li>
-                  <li>Configura tu router</li>
-                  <li>Canales y banda óptima</li>
-                  <li>Máximo rendimiento en casa</li>
-                </ul>
-                <button class="gtcard-btn gtcard-btn-green" data-action="call" type="button">OPTIMIZAR MI RED</button>
+                <h3>Mudanzas y Cambio de Proveedor</h3>
+                <p>Haz tu cambio de servicio o mudanza de forma fácil y sin quedarte sin internet. Nosotros te acompañamos en todo el proceso.</p>
               </div>
             </article>
 
@@ -307,108 +280,133 @@
         </div>
       </section>
 
-      <section id="preguntas" class="faq-section">
-        <div class="faq-bg" aria-hidden="true"></div>
-        <div class="container px-4 relative z-10">
+      <!-- ── Preguntas Frecuentes ───────────────────── -->
+      <section id="preguntas" class="faq-section-v2">
+        <div class="container px-4">
+          <div class="faq-layout-v2">
 
-          <div class="faq-head">
-            <h2>PREGUNTAS <span>FRECUENTES</span></h2>
-          </div>
+            <div class="faq-img-col">
+              <img src="./images/faq_tecnico.webp" alt="Técnico de internet instalando servicio" class="faq-img-photo">
+            </div>
 
-          <div class="faq-cards-grid">
+            <div class="faq-content-col">
+              <h2 class="faq-v2-title">Preguntas <span>frecuentes</span></h2>
 
-            <article class="faqcard">
-              <div class="faqcard-header"><span>FACTURACIÓN Y PAGOS</span></div>
-              <div class="faqcard-body">
-                <div class="faqcard-icons" aria-hidden="true">
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="4" y="10" width="32" height="20" rx="3" fill="rgba(6,182,212,0.08)"/>
-                    <line x1="4" y1="16" x2="36" y2="16"/>
-                    <rect x="8" y="22" width="8" height="4" rx="1" fill="rgba(6,182,212,0.20)"/>
-                    <line x1="22" y1="23" x2="30" y2="23"/><line x1="22" y1="26" x2="28" y2="26"/>
-                  </svg>
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="8" y="4" width="24" height="32" rx="3" fill="rgba(6,182,212,0.08)"/>
-                    <line x1="13" y1="13" x2="27" y2="13"/>
-                    <line x1="13" y1="19" x2="27" y2="19"/>
-                    <line x1="13" y1="25" x2="21" y2="25"/>
-                  </svg>
-                </div>
-                <p class="faqcard-text">Te orientamos sobre tu factura, fechas de pago y cómo entender los cargos en tu servicio residencial.</p>
-                <button class="faqcard-btn" data-action="call" type="button">AGENDAR CONSULTA</button>
+              <div class="faq-accordion-v2">
+
+                <details class="faq-item-v2" open>
+                  <summary class="faq-q-v2">¿Realmente no hay contratos forzosos?</summary>
+                  <div class="faq-a-v2">Exacto. Creemos en la libertad del cliente. No estás atado a plazos mínimos de permanencia; puedes cancelar el servicio cuando lo desees sin pagar penalizaciones por terminación anticipada.</div>
+                </details>
+
+                <details class="faq-item-v2">
+                  <summary class="faq-q-v2">¿Qué requisitos necesito para contratar si soy extranjero?</summary>
+                  <div class="faq-a-v2">En la mayoría de los casos solo necesitas un ID válido y una dirección de servicio en USA. Te orientamos con todos los pasos y documentos necesarios según tu situación.</div>
+                </details>
+
+                <details class="faq-item-v2">
+                  <summary class="faq-q-v2">¿El precio de mi factura cambiará después de unos meses?</summary>
+                  <div class="faq-a-v2">Algunos planes tienen precio introductorio por 12 meses. Te explicamos exactamente cuándo y cuánto puede cambiar tu tarifa para que no tengas sorpresas en tu factura.</div>
+                </details>
+
+                <details class="faq-item-v2">
+                  <summary class="faq-q-v2">¿Qué significa que el internet sea ilimitado?</summary>
+                  <div class="faq-a-v2">Significa que no hay límite en los gigabytes que puedes consumir al mes. Puedes hacer streaming, gaming y videollamadas sin preocuparte por quedarte sin datos.</div>
+                </details>
+
+                <details class="faq-item-v2">
+                  <summary class="faq-q-v2">¿El servicio incluye el equipo (módem/router)?</summary>
+                  <div class="faq-a-v2">Depende del proveedor y plan que elijas. Te informamos qué está incluido y si hay costos adicionales por el equipo, para que tomes la mejor decisión.</div>
+                </details>
+
+                <details class="faq-item-v2">
+                  <summary class="faq-q-v2">¿Qué pasa si me mudo de casa?</summary>
+                  <div class="faq-a-v2">Te ayudamos a gestionar el traslado de tu servicio a la nueva dirección o a buscar la mejor opción disponible en tu nueva zona de cobertura.</div>
+                </details>
+
               </div>
-            </article>
-
-            <article class="faqcard">
-              <div class="faqcard-header"><span>INSTALACIÓN Y SOPORTE</span></div>
-              <div class="faqcard-body">
-                <div class="faqcard-icons" aria-hidden="true">
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M10 8 L10 20 C10 26 16 30 20 30 C24 30 30 26 30 20 L30 8"/>
-                    <line x1="14" y1="8" x2="14" y2="4"/><line x1="20" y1="8" x2="20" y2="4"/><line x1="26" y1="8" x2="26" y2="4"/>
-                    <line x1="20" y1="30" x2="20" y2="36"/>
-                    <rect x="16" y="34" width="8" height="4" rx="1" fill="rgba(6,182,212,0.15)"/>
-                  </svg>
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M24 10 C28 9 32 13 31 17 C30 19 29 20 27 21 L17 31 C16 32 14 32 13 31 C12 30 12 28 13 27 L23 17 C25 15 25 13 24 10Z" fill="rgba(6,182,212,0.10)"/>
-                    <circle cx="15" cy="29" r="2" fill="#22d3ee" stroke="none"/>
-                  </svg>
-                </div>
-                <p class="faqcard-text">Coordinamos tu instalación, resolvemos problemas de conexión y te guiamos con herramientas de diagnóstico.</p>
-                <button class="faqcard-btn" data-action="call" type="button">SOLICITAR SOPORTE</button>
-              </div>
-            </article>
-
-            <article class="faqcard faqcard-purple">
-              <div class="faqcard-header faqcard-header-purple"><span>OPTIMIZACIÓN DE RED</span></div>
-              <div class="faqcard-body">
-                <div class="faqcard-icons faqcard-icons-purple" aria-hidden="true">
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 16 C9 11 14 9 20 9 C26 9 31 11 35 16"/>
-                    <path d="M9 21 C12 18 16 16 20 16 C24 16 28 18 31 21"/>
-                    <path d="M13 26 C15 24 17 23 20 23 C23 23 25 24 27 26"/>
-                    <circle cx="20" cy="32" r="2.5" fill="#a855f7" stroke="none"/>
-                  </svg>
-                  <svg viewBox="0 0 40 40" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="5" y="22" width="30" height="12" rx="3" fill="rgba(168,85,247,0.08)"/>
-                    <circle cx="12" cy="28" r="1.5" fill="#a855f7" stroke="none"/>
-                    <circle cx="18" cy="28" r="1.5" fill="#a855f7" stroke="none" opacity="0.5"/>
-                    <line x1="26" y1="24" x2="26" y2="32"/><line x1="30" y1="24" x2="30" y2="32"/>
-                    <line x1="14" y1="22" x2="10" y2="14"/>
-                    <line x1="20" y1="22" x2="20" y2="12"/>
-                    <line x1="26" y1="22" x2="30" y2="14"/>
-                  </svg>
-                </div>
-                <p class="faqcard-text">Mejoramos la cobertura WiFi en tu hogar, optimizamos la señal y configuramos tu router para máximo rendimiento.</p>
-                <button class="faqcard-btn faqcard-btn-purple" data-action="call" type="button">OPTIMIZAR MI RED</button>
-              </div>
-            </article>
+            </div>
 
           </div>
+        </div>
 
-          <div class="faq-cta">
-            <h3 class="faq-cta-title">LISTO PARA CONTACTAR</h3>
-            <div class="faq-cta-btns">
-              <a href="tel:+12142204594" class="faq-btn-call">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        <div class="faq-v2-cta">
+          <div class="container px-4">
+            <div class="faq-v2-cta-inner">
+              <h3>¿Listo para contratar o tienes más preguntas?</h3>
+              <a href="tel:+12142204594" class="faq-v2-btn-call">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
                 SOLICITAR LLAMADA
               </a>
             </div>
           </div>
-
         </div>
       </section>
+
     </main>
 
-    <footer class="faq-footer">
-      <div class="faq-bg faq-footer-bg" aria-hidden="true"></div>
-      <div class="container px-4 relative z-10">
-        <div class="faq-footer-inner">
-          <div class="faq-footer-copy">
-            &copy; <span data-year></span> Connecting &nbsp;&middot;&nbsp;
-            <a href="./legal.html">Aviso Legal</a> &nbsp;&middot;&nbsp;
-            <a href="./privacy.html">Pol&iacute;tica de Privacidad</a> &nbsp;&middot;&nbsp;
-            <a href="#preguntas">Soporte T&eacute;cnico</a>
+    <!-- ── Footer ─────────────────────────────────── -->
+    <footer class="footer-new">
+      <div class="container px-4">
+        <div class="footer-new-top">
+
+          <div class="footer-new-brand">
+            <div class="footer-new-logo">
+              <img src="./images/Connecting (2).png" alt="Connecting" width="36" height="36">
+              <span>Connecting</span>
+            </div>
+            <p>Connecting te ayuda con internet residencial, mudanzas, pagos, contratación y soporte técnico en español para que elijas la mejor opción sin complicaciones.</p>
+          </div>
+
+          <div class="footer-new-col">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#planes">Planes de Internet</a></li>
+              <li><a href="#beneficios">Servicios</a></li>
+              <li><a href="#preguntas">Soporte</a></li>
+              <li><a href="tel:+12142204594">Contáctanos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-new-col">
+            <h4>Soporte</h4>
+            <ul>
+              <li><a href="#preguntas">Preguntas frecuentes</a></li>
+              <li><a href="tel:+12142204594">Asesoría personalizada</a></li>
+              <li><a href="tel:+12142204594">Agendar llamada</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-new-col">
+            <h4>Atención</h4>
+            <ul class="footer-new-contact">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                <span><strong>Teléfono:</strong><br>(214) 220-4594</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                <span><strong>Correo:</strong><br>info@connecting.com</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                <span><strong>Horarios:</strong><br>Lunes a viernes 8am – 9pm<br>Sáb. y Dom. 9am – 6pm</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-new-bottom">
+        <div class="container px-4">
+          <div class="footer-new-bottom-inner">
+            <span>&copy; <span data-year></span> Connecting &nbsp;·&nbsp; Todos los derechos reservados.</span>
+            <span class="footer-new-links">
+              <a href="./legal.html">Aviso Legal</a>
+              <a href="./privacy.html">Política de Privacidad</a>
+              <a href="#preguntas">Soporte Técnico</a>
+            </span>
           </div>
         </div>
       </div>
