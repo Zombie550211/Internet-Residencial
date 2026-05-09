@@ -1682,6 +1682,87 @@ a:hover {
    REDISEÑO V2
    ═══════════════════════════════════════════════════════ */
 
+/* ── CTA Banner (entre Hero y Planes) ───────────────── */
+.cta-banner-section {
+  background: #0f2d6e;
+  padding: 56px 0;
+}
+
+.cta-banner-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cta-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .cta-banner-img-wrap { order: -1; }
+}
+
+.cta-banner-text {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 36px 36px 40px;
+}
+
+.cta-banner-text h2 {
+  color: #fff;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  letter-spacing: -0.4px;
+}
+
+.cta-banner-text p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.cta-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 24px;
+  background: #2b8ef0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.1s ease;
+  border: none;
+}
+
+.cta-banner-btn:hover {
+  background: #1d7de0;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.cta-banner-img-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35);
+}
+
+.cta-banner-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 /* ── Planes V2 (fondo claro) ─────────────────────────── */
 .planes-section-v2 {
   background: #f0f4f8;
