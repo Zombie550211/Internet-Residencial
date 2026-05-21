@@ -221,13 +221,13 @@ a:hover {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.95), rgba(168, 85, 247, 0.86));
-  color: rgba(255, 255, 255, 0.96);
-  border-color: rgba(56, 189, 248, 0.32);
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+  border-color: rgba(249,115,22,0.35);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 1), rgba(168, 85, 247, 0.96));
+  background: linear-gradient(135deg, #fb923c, #f97316);
 }
 
 .btn-ghost {
@@ -329,23 +329,23 @@ a:hover {
   gap: 10px;
   margin-top: 28px;
   padding: 14px 26px;
-  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  background: linear-gradient(135deg, #f97316, #ea580c);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.3px;
   border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 4px 22px rgba(14, 165, 233, 0.48);
+  box-shadow: 0 4px 22px rgba(249,115,22,0.50);
   transition: background 0.18s ease, transform 0.1s ease, box-shadow 0.18s ease;
   cursor: pointer;
   text-decoration: none;
 }
 
 .btn-contact-hero:hover {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  background: linear-gradient(135deg, #fb923c, #f97316);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.58);
+  box-shadow: 0 8px 30px rgba(249,115,22,0.62);
   text-decoration: none;
 }
 
@@ -570,7 +570,7 @@ a:hover {
 .plan-btn {
   width: 100%;
   padding: 11px 18px;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
+  background: linear-gradient(90deg, #f97316, #ea580c);
   color: #fff;
   font-weight: 700;
   font-size: 12px;
@@ -579,20 +579,20 @@ a:hover {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 3px 16px rgba(34, 197, 94, 0.45);
+  box-shadow: 0 3px 16px rgba(249,115,22,0.45);
   transition: all 0.18s ease;
 }
 
 .plan-btn:hover {
-  background: linear-gradient(90deg, #16a34a, #15803d);
+  background: linear-gradient(90deg, #fb923c, #f97316);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.60);
+  box-shadow: 0 6px 24px rgba(249,115,22,0.62);
 }
 
 .plan-btn:active { transform: translateY(0); }
 
 .plan-btn-featured {
-  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.60);
+  box-shadow: 0 4px 20px rgba(249,115,22,0.60);
 }
 
 /* Legal */
@@ -1099,9 +1099,9 @@ a:hover {
 }
 
 .sticky-btn-primary {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.95), rgba(168, 85, 247, 0.86));
-  color: rgba(255, 255, 255, 0.96);
-  border-color: rgba(56, 189, 248, 0.32);
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+  border-color: rgba(249,115,22,0.35);
 }
 
 .sticky-btn:focus-visible {
@@ -1385,38 +1385,33 @@ a:hover {
 .gtcard-btn {
   width: 100%;
   padding: 11px 14px;
-  background: transparent;
-  color: #06b6d4;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: #fff;
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  border: 1.5px solid rgba(6,182,212,0.70);
+  border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(6,182,212,0.20);
+  box-shadow: 0 3px 16px rgba(249,115,22,0.40);
   transition: all 0.18s ease;
 }
 
 .gtcard-btn:hover {
-  background: rgba(6,182,212,0.12);
-  border-color: #06b6d4;
-  box-shadow: 0 0 22px rgba(6,182,212,0.40);
+  background: linear-gradient(90deg, #fb923c, #f97316);
+  box-shadow: 0 6px 24px rgba(249,115,22,0.58);
   transform: translateY(-1px);
 }
 
 .gtcard-btn-green {
-  color: #22c55e;
-  border-color: rgba(34,197,94,0.70);
-  box-shadow: 0 0 12px rgba(34,197,94,0.20);
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-  color: #fff;
-  border: none;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  box-shadow: 0 3px 16px rgba(249,115,22,0.40);
 }
 
 .gtcard-btn-green:hover {
-  background: linear-gradient(90deg, #16a34a, #15803d);
-  box-shadow: 0 4px 22px rgba(34,197,94,0.50);
+  background: linear-gradient(90deg, #fb923c, #f97316);
+  box-shadow: 0 6px 24px rgba(249,115,22,0.58);
 }
 }
 
@@ -1556,20 +1551,21 @@ a:hover {
 .faqcard-btn {
   width: 100%;
   padding: 10px 14px;
-  background: transparent;
-  color: #06b6d4;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: #fff;
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  border: 1.5px solid rgba(6,182,212,0.65);
+  border: none;
   border-radius: 50px;
   cursor: pointer;
+  box-shadow: 0 3px 14px rgba(249,115,22,0.40);
   transition: all 0.18s ease;
 }
-.faqcard-btn:hover { background: rgba(6,182,212,0.12); border-color: #06b6d4; transform: translateY(-1px); }
-.faqcard-btn-purple { color: #a855f7; border-color: rgba(168,85,247,0.65); }
-.faqcard-btn-purple:hover { background: rgba(168,85,247,0.12); border-color: #a855f7; }
+.faqcard-btn:hover { background: linear-gradient(90deg, #fb923c, #f97316); box-shadow: 0 6px 22px rgba(249,115,22,0.55); transform: translateY(-1px); }
+.faqcard-btn-purple { background: linear-gradient(90deg, #f97316, #ea580c); box-shadow: 0 3px 14px rgba(249,115,22,0.40); }
+.faqcard-btn-purple:hover { background: linear-gradient(90deg, #fb923c, #f97316); }
 
 /* CTA final */
 .faq-cta {
@@ -1623,18 +1619,18 @@ a:hover {
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: transparent;
+  background: linear-gradient(90deg, #f97316, #ea580c);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5px;
   border-radius: 50px;
   text-decoration: none;
-  border: 2px solid rgba(6,182,212,0.70);
-  box-shadow: 0 0 14px rgba(6,182,212,0.20);
+  border: none;
+  box-shadow: 0 4px 20px rgba(249,115,22,0.50);
   transition: all 0.18s ease;
 }
-.faq-btn-call:hover { background: rgba(6,182,212,0.12); border-color: #06b6d4; transform: translateY(-2px); text-decoration: none; }
+.faq-btn-call:hover { background: linear-gradient(90deg, #fb923c, #f97316); box-shadow: 0 6px 28px rgba(249,115,22,0.65); transform: translateY(-2px); text-decoration: none; }
 
 /* Footer */
 .faq-footer {
@@ -2354,12 +2350,12 @@ a:hover {
 
 /* Botón header con pulso */
 @keyframes btn-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(56,189,248,0.55), 0 4px 18px rgba(56,189,248,0.35); }
-  50%       { box-shadow: 0 0 0 7px rgba(56,189,248,0), 0 4px 24px rgba(168,85,247,0.50); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249,115,22,0.60), 0 4px 18px rgba(249,115,22,0.40); }
+  50%       { box-shadow: 0 0 0 7px rgba(249,115,22,0), 0 4px 24px rgba(234,88,12,0.55); }
 }
 
 .btn-pulse {
-  background: linear-gradient(135deg, #38bdf8, #a855f7) !important;
+  background: linear-gradient(135deg, #f97316, #ea580c) !important;
   border-color: transparent !important;
   font-weight: 800;
   font-size: 15px;
@@ -2369,5 +2365,5 @@ a:hover {
 }
 .btn-pulse:hover {
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 28px rgba(56,189,248,0.55) !important;
+  box-shadow: 0 6px 28px rgba(249,115,22,0.65) !important;
 }
